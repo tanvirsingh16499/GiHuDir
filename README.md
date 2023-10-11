@@ -1,1 +1,1 @@
-# GiHuDir
+This is Github guidelines.
