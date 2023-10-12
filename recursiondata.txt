@@ -1,0 +1,86 @@
+Recursive function 
+
+it is a function which is defined in terms of itself.
+
+void fun(int n)
+{
+if(n>0)  // base case
+{
+n=n-1;
+fun(n);   // recursive case
+}
+}
+
+
+fun(6)    fun(5)   fun(4)....... 
+1. base case   atleast 1 base case required   it is a statements which leads to end of recursive calls
+2. recursive case    it is a statement which includes call to itself for smaller version
+
+
+void fun(int n)
+{
+    if(n>0)
+    {
+        n=n-1;
+        cout<<"calling  ...fun("<<n<< ") "<<endl;
+        fun(n);
+        cout<<"call to fun( "<<n+1<<" ) going to finish"<<endl;
+    }
+}
+int main()
+{
+    cout<<"calling  ...fun("<<6<< ") "<<endl;
+   fun(6);
+
+    return 0;
+}
+
+
+void fun(int n)
+{
+if(n>0)
+{
+fun(n/3);
+cout<<n;
+}
+}
+
+fun(27);
+
+int f(int x,int y)
+{
+if(x==0)
+return y;
+
+return f(x-1,x+y);
+}
+
+f(4,3);
+
+
+
+int reversedigit(int num)
+{
+int sum=0;
+int r;
+while(num>0)
+{
+r=num%10;
+sum=sum*10+r;
+num=num/10;
+}
+return sum;
+}
+
+
+int recursive(int num,int sum)
+{
+if(num>0)
+{
+int r=num%10;
+sum=sum*10+r;
+sum=recursive(num/10,sum);
+}
+return sum;
+}
+
