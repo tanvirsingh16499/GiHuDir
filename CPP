@@ -1,0 +1,2 @@
+We learn about basic fundamentals of c++.
+It is very fun and interesting topic, though it is a little complicated.
