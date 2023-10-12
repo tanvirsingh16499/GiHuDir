@@ -1,0 +1,2 @@
+Git is a command driven software that is used to track the status of the project.
+Github is the cloud hosted software that is used to save the status of the tracked records of the files and project and changes done in the project.
